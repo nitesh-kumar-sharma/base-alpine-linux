@@ -5,4 +5,4 @@ RUN apk add --no-cache --update bash \
 		procps && \
 		rm -rf /var/cache/apk/* && \
 		echo "export PATH=$PATH"
-ADD ./script/* /etc/prerequisite/*
+COPY ./script/* /etc/prerequisite/*
